@@ -138,14 +138,13 @@ long AdvanceTime(void)
 
             break;
          case EXTERNAL_TIME :
-            while(CurrTick == PrevTick) {
-               CurrTick = (long) (1.0E-6*usec()/DTSIM);
-            }
-            PrevTick = CurrTick;
+            /* Truly external time - advance immediately when called */
+            /* Remove real-time throttling to allow faster-than-real-time execution */
             SimTime += DTSIM;
             itime = (long) ((SimTime+0.5*DTSIM)/(DTSIM));
             SimTime = ((double) itime)*DTSIM;
 
+            /* Use current real system time for absolute time references */
             RealSystemTime(&UTC.Year,&UTC.doy,&UTC.Month,&UTC.Day,
                &UTC.Hour,&UTC.Minute,&UTC.Second,DTSIM);
             CivilTime = DateToTime(UTC.Year,UTC.Month,UTC.Day,
