@@ -188,7 +188,7 @@ long DecodeString(char *s)
       else if (!strcmp(s,"TRITON")) return TRITON;
       else if (!strcmp(s,"NERIED")) return NERIED;
       else if (!strcmp(s,"CHARON")) return CHARON;
-      else if (sscanf(s,"MINORBODY_%ld",&i) == 1) return(55+i);
+      else if (sscanf(s,"MINORBODY_%lu",&i) == 1) return(55+i);
 
       else if (!strcmp(s,"SUN")) return SUN;
       else if (!strcmp(s,"PLANET")) return PLANET;
