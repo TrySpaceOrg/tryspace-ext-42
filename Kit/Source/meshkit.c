@@ -1154,8 +1154,8 @@ struct MeshType *LoadWingsObjFile(const char ModelPath[80],const char ObjFilenam
                    strcmp(MatlName,Matl[MatlIdx].Label))
                       MatlIdx++;
             if (MatlIdx >= *Nmatl) {
-               printf("Material %s is not in Matl structure\n",MatlName);
-               printf("Setting material to default\n");
+               //printf("Material %s is not in Matl structure\n",MatlName);
+               //printf("Setting material to default\n");
                sprintf(MatlName,"default");
                MatlIdx = 0;
                while (MatlIdx < *Nmatl &&
