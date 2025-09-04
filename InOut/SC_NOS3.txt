@@ -63,7 +63,7 @@ FALSE                       ! Wheel Jitter Active
 =============================  Wheel X  ================================
 0.0                         ! Initial Momentum, N-m-sec
 1.0   0.0   0.0             ! Wheel Axis Components, [X, Y, Z]
-0.001   0.01082             ! Max Torque (N-m), Momentum (N-m-sec)
+0.005   0.04               ! Max Torque (N-m), Momentum (N-m-sec)
 1.72e-5                     ! Wheel Rotor Inertia, kg-m^2
 0                           ! Body
 0                           ! Node
@@ -71,7 +71,7 @@ NONE                        ! Drag/Jitter Input File Name
 =============================  Wheel Y  ================================
 0.0                         ! Initial Momentum, N-m-sec
 0.0   1.0   0.0             ! Wheel Axis Components, [X, Y, Z]
-0.001   0.01082             ! Max Torque (N-m), Momentum (N-m-sec)
+0.005   0.04               ! Max Torque (N-m), Momentum (N-m-sec)
 1.72e-5                     ! Wheel Rotor Inertia, kg-m^2
 0                           ! Body
 0                           ! Node
@@ -79,7 +79,7 @@ NONE                        ! Drag/Jitter Input File Name
 =============================  Wheel Z  ================================
 0.0                         ! Initial Momentum, N-m-sec
 0.0   0.0   1.0             ! Wheel Axis Components, [X, Y, Z]
-0.001   0.01082             ! Max Torque (N-m), Momentum (N-m-sec)
+0.005   0.04               ! Max Torque (N-m), Momentum (N-m-sec)
 1.72e-5                     ! Wheel Rotor Inertia, kg-m^2
 0                           ! Body
 0                           ! Node
