@@ -1,4 +1,5 @@
 <<<<<<<<<<<<<<<<<  42:  Command Script File  >>>>>>>>>>>>>>>>>
+EOF
 0.0 SC[0] qrn = [0.0  0.0  0.0  1.0]
 1000.0 SC[0] qrl = [0.0  1.0  0.0  0.0]
 2000.0 Point SC[0].B[0] Primary Vector [0.0 0.0 1.0] at VELOCITY
